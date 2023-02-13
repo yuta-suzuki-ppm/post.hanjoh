@@ -1,0 +1,253 @@
+@charset "UTF-8";
+
+/* 全体 */
+body {
+    font-family: "Helvetica Neue",
+        Arial,
+        "Hiragino Kaku Gothic ProN",
+        "Hiragino Sans",
+        Meiryo,
+        sans-serif;
+}
+
+h1,
+h2 {
+    font-weight: 600;
+}
+
+.h_line {
+    display: inline-block;
+    border-bottom: solid #000000;
+    padding-bottom: 10px;
+}
+
+.bg_gray {
+    background-color: #f7f7f7;
+}
+
+.bg_white {
+    background-color: #ffffff;
+}
+
+/* ナビゲーションメニュー */
+.header {
+    background-color: #ffffff;
+    display: flex;
+    top: 0;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+.top_btn {
+    border-radius: 0px;
+}
+
+.top_text {
+    color: #00178C;
+    font-weight: 600;
+}
+
+.sp_logo {
+    display: none;
+}
+
+@media(max-width:991px) {
+    .sp_none {
+        display: none;
+    }
+
+    .sp_logo {
+        display: block;
+    }
+}
+
+/* top */
+.top {
+    height: 70vh;
+    background-image: url(../img/top.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.top_word {
+    margin-top: 20vh;
+}
+
+.top_h {
+    color: #00178C;
+    font-weight: 600;
+}
+
+/* trouble */
+.trouble_h {
+    height: 64px;
+}
+
+.trouble_text {
+    font-size: 24px;
+    font-weight: 600;
+
+    position: relative;
+    display: inline-block;
+    padding: 7px 10px;
+    background: #FFF;
+    border: solid 3px #ccc;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+.trouble_text:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: -24px;
+    margin-top: -12px;
+    border: 12px solid transparent;
+    border-left: 12px solid #FFF;
+    z-index: 2;
+}
+
+.trouble_text:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: -30px;
+    margin-top: -14px;
+    border: 14px solid transparent;
+    border-left: 14px solid #ccc;
+    z-index: 1;
+}
+
+.trouble_h2 {
+    position: relative;
+    padding: 20px 10px;
+    color: #ffffff;
+    background-color: #000000;
+}
+
+.trouble_h2:before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -15px;
+    border: 15px solid transparent;
+    border-top: 15px solid #000000;
+}
+
+@media(max-width:991px) {
+    .trouble_text:before {
+        top: auto;
+        right: auto;
+        margin-top: auto;
+
+        bottom: -24px;
+        left: 50%;
+        margin-left: -15px;
+        border: 12px solid transparent;
+        border-top: 12px solid #FFF;
+        z-index: 2;
+    }
+
+    .trouble_text:after {
+        top: auto;
+        right: auto;
+        margin-top: auto;
+
+        bottom: -30px;
+        left: 50%;
+        margin-left: -17px;
+        border: 14px solid transparent;
+        border-top: 14px solid #CCC;
+        z-index: 1;
+    }
+
+    .women {
+        height: 400px;
+        object-position: center;
+    }
+
+    .women img {
+        object-fit: cover;
+    }
+}
+
+/* staff */
+.staff_content {
+    height: 450px;
+}
+
+/* worker */
+.worker_content img {
+    border-radius: 50%;
+}
+
+@media(max-width:991px) {
+    .worker_content {
+        width: 100vh;
+    }
+}
+
+/* flow */
+.flow_container {
+    max-width: 1100px;
+}
+
+.flow_step {
+    font-weight: 600;
+    font-size: 32px;
+}
+
+.flow_content {
+    border-left: 1px solid #000000;
+}
+
+.flow_content p {
+    margin-bottom: 0;
+}
+
+@media(max-width:991px) {
+    .flow_content {
+        border-left: none;
+        border-top: 1px solid #000000;
+    }
+}
+
+/* company */
+th {
+    width: 80px;
+}
+
+.map {
+    width: 100%;
+    height: 300px;
+}
+
+.company img {
+    height: 720px;
+    object-fit: cover;
+}
+
+/* form */
+.form_required {
+    color: #ff0000;
+    font-weight: 600;
+}
+
+.form_btn {
+    width: 195px;
+}
+
+/* footer */
+footer {
+    border-top: double 3px #000000;
+    height: 25vh;
+}
+
+.footer {
+    position: relative;
+    top: 11vh;
+    display: block;
+    text-align: center;
+}
